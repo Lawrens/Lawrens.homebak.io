@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <link href="./assets/apple-icon-180x180.png" rel="apple-touch-icon">
+  <link href="./assets/favicon.ico" rel="icon">
+
+
+
+  <title>Title page</title>  
+
+<link href="./main.82cfd66e.css" rel="stylesheet"></head>
+
+<body onload="charger();" >
+
+ <!-- Add your content of header -->
+<header class="">
+  <div class="navbar navbar-default visible-xs">
+    <button type="button" class="navbar-toggle collapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="./index.html" class="navbar-brand"></a>
+  </div>
+
+  <nav class="sidebar">
+    <div class="navbar-collapse" id="navbar-collapse">
+      <div class="site-header hidden-xs">
+          <a class="site-brand" href="./index.html" title="">
+            <img class="img-responsive site-logo" alt="" src="./assets/images/mashup-logo.svg">
+             HB <br>
+            HomeBak
+          </a>
+        <p>We take inspiration from the World’s best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!<</p>
+      </div>
+      <ul class="nav">
+        <li><a href="./index.html" title="">Home</a></li>
+        <li><a href="./about.html" title="">About</a></li>
+        <li><a href="./services.html" title="">Services</a></li>
+        <li><a href="./contact.html" title="">Contact</a></li>
+        <li><a href="./components.html" title="">Components</a></li>
+        <li class="navbar"><a href="#" data-target="#loginModal" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+
+       <nav class="nav-footer">
+        <p class="nav-footer-social-buttons">
+          <a class="fa-icon" href="https://www.twitter.com/" title="">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a class="fa-icon" href="https://facebook.com/" title="">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a class="fa-icon" href="https://linkedin.com/" title="">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="fa-icon" href="https://instagram.com/" title="">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </p>
+        <p>© Eddy_Hommerd_2020 | created with BootStrap 4.1</p>
+      </nav>  
+    </div> 
+  </nav>
+</header>
+<main class="" id="main-collapse">
+<div class="modal fade" id="loginModal" role="dialog">
+            <div class="modal-dialog" style="width: 700px;" >            
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline" >
+                            <div class="form-group">
+                                <label for="Email" class="sr-only">Email</label>
+                                
+                                <input type="email" name="email" id="Email" class="form-control" placeholder="Email">
+                                  
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="Pass" class="sr-only">Password</label>
+                                <input type="password" name="Password" class="form-control" id="Pass" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-sm">Sign in</button>
+                            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Add your site or app content here -->
+
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+
+        <div class="template-example">
+          <h2 class="template-title-example">Online Reservation & Order</h2>
+          <p>This is really simple to make an <b> Online reservation & order</b>. 
+            Just fill the form after making your choice of food and number of Guests.
+          <blockquote>
+            <p>At HomeBak restaurant, we care of clients taste and make them satisfy as they need.</p>
+          </blockquote>
+          
+          </p>
+        </div>
+
+        <div class="template-example">
+          <h2 class="template-title-example"></h2>
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="template-title-example"></h2>
+              <div class="row">
+                  <div class="col-md-6">
+                    <p><a href="" class="btn btn-primary btn-lg">Ready for an Order!</a></p>
+                 
+                 </div>
+              </div>
+          </div>
+              
+        
+        <!-- id pour qui affiche liste deroulante des entree et choix avec option onchange -->
+	<div class="entree">Entr&eacute;e:
+    <span class="Entree">
+      <select id="Entree" size="1" onchange="onchangeListe(this)">
+        <option >Choisir</option>
+      </select>
+    </span>
+    <span class="Salade">
+      <img id="imgEntree"  src="../savory/assets/images/vide.jpg" alt="Entree"/>
+    </span> 
+    <div class="afficherPrixEntree" >
+      <p id="PrixEntree">&nbsp;</p>
+    </div>       
+</div>
+       <!-- id pour qui affiche liste deroulante des repas et choix avec option onchange -->
+		<div class="repas">Repas:
+      <span class="Repas">
+        <select id="Repas"  size="1" onchange="onchangeListe(this)">
+          <option>Choisir</option>
+         </select>
+      </span>
+       <span class="Spaghetti">
+        <img id="imgRepas" src="../savory/assets/images/vide.jpg" alt="repas" />
+       </span> 
+        <div class="afficherPrixRepas" >
+          <p id="PrixRepas">&nbsp;</p>
+        </div>       
+    </div>
+
+    <!-- affiche le calcul total, sous-total et taxe -->
+		
+		<div class="CalculSous">
+      <h3>Sous-total: </h3>
+      <h3 id="SousTotal"></h3>
+     </div>
+   <div class="CalculTaxes">     
+     <h3>Taxes:</h3>
+     <h3 id="Taxes"></h3>
+    </div>
+   <div class="CalculTotal">
+   <h3>Total:</h3>
+   <h3 id="Total"></h3>
+   </div>
+  
+   <br />
+   <br/>
+   <br />
+   <br/>
+   <br />
+   <br/>
+   <br />
+   <br/>
+        <div class="template-example">
+          <h3 class="template-title-example">Please complete this form below</h3>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+
+              
+        
+
+            <div class="form-group">
+              <div>
+              <label for="exampleInputEmail1">Number of Guests</label>
+              
+              <select class="form-control">
+
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                 <option>6</option>
+                  <option>7</option>
+                   <option>8</option>
+                    <option>9</option>
+                     <option>10</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox-inline">
+                <input 
+                type="checkbox" id="inlineCheckbox1" value="option1"> Email me a copy
+              </label>
+              <label class="checkbox-inline">
+                <input type="checkbox" id="inlineCheckbox2" value="option2"> I am a human
+              </label>
+            </div>
+
+            <div class="form-group">
+              <textarea class="form-control" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            
+            <p><a href="" class="btn btn-primary btn-lg">Send</a></p>
+        </div>
+
+
+
+
+      </div>
+    </div>
+ 
+
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+  navActivePage();
+});
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
+
+<script>
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-XXXXX-X', 'auto');
+  ga('send', 'pageview');
+</script>
+
+--> <script type="text/javascript" src="./main.85741bff.js"></script></body>
+
+</html>
