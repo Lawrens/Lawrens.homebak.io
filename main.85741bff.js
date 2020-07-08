@@ -62,22 +62,22 @@ function charger(liste){
 	var imageEntree =document.getElementById("imgEntree");
 	var imageRepas =document.getElementById("imgRepas");
 		if(valeurEntree==0.00)
-			imageEntree.src="../savory/assets/images/vide.jpg";
+			imageEntree.src="./assets/images/vide.jpg";
 		if(valeurEntree==5.95)
-			imageEntree.src="../savory/assets/images/salade.jpg";
+			imageEntree.src="./assets/images/salade.jpg";
 		if(valeurEntree==4.95)
-			imageEntree.src="../savory/assets/images/escargot.jpg";	
+			imageEntree.src="./assets/images/escargot.jpg";	
 		if(valeurEntree==6.95)
-			imageEntree.src="../savory/assets/images/noel.jpg";
+			imageEntree.src="./assets/images/noel.jpg";
 		
 		if(valeurRepas==0.00)
-			imageRepas.src="../savory/assets/images/vide.jpg";
+			imageRepas.src="./assets/images/vide.jpg";
 		if(valeurRepas==8.95)
-			imageRepas.src="../savory/assets/images/African meal.jpg";
+			imageRepas.src="./assets/images/African meal.jpg";
 		if(valeurRepas==9.95)
-			imageRepas.src="../savory/assets/images/poudine quebecoise.jpg";	
+			imageRepas.src="./assets/images/poudine quebecoise.jpg";	
 		if(valeurRepas==7.95)
-			imageRepas.src="../savory/assets/images/Shawarma.jpg";		
+			imageRepas.src="./assets/images/Shawarma.jpg";		
 				
 		
 	}
